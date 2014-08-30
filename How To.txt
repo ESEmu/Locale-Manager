@@ -1,0 +1,45 @@
+﻿+ ESEmu Project (http://esemuproject.com) +
+- OFFICIAL MODDING TOOL -
+
+Name: Locale Manager (LManager)
+Coder: d3vil401/d3v1l401 (http://d3vsite.org)
+
+What is this tool supposed to do?
+
+Decrypts and encrypts the .ess translations file, so you can translate the client and share your work to all the ESEmu community.
+
+
+
+
+How to use:
+
+- Double click Locale Manager.bat
+- Type "LManager.exe <name of the translations file as input>.ess <output decrypted translations file>.txt"
+- Press Enter
+
+Example:
+LManager.exe general.ess decrypted.txt
+
+There will be a file with the name parsed as second argument (decrypted.txt in this example), just open it and modify all the strings
+you want to.
+WARNING:
+
+DO NOT TOUCH THE ARROW CHARACTERS (→).
+DO NOT TOUCH THE DYNAMIC VARIABLE REPLACERS (@1, @2, @3 ...).
+DO NOT TOUCH THE NUMBERS AND THE "BIG" SPACE (TAB) BETWEEN THE NUMBER AND THE TEXT, IT IS THE UNIQUE STRING IDENTIFYER.
+IT'S USELESS TO TRANSLATE THE KOREAN UNTRANSLATED STRINGS, SINCE THEY ARE NOT USED BY THE GAME OR JUST USED BY THE GAME MODERATORS.
+
+Once you finish to translate and just want to test it, you have to do the same thing, but parsing the first parameters as the decrypted file.
+(DELETE THE OLD general.ess FIRST!)
+
+Example:
+LManager.exe decrypted.txt general.ess
+
+Now you have finished the work.
+
+
+HELP I DON'T WHERE I CAN FIND A GENERAL.ESS TO EDIT!
+
+Just open your ElSword installation folder and go to data, there you can find the general.ess.
+Example:
+C:\Program Files (x86)\ElSword\data\
